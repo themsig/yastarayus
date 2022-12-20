@@ -13,9 +13,9 @@ max_side = side.max
 side.delete(max_side)
 
 
-if a == b and a == c
+if a == b && a == c
     puts 'Прямоугольник равнобедренный и равносторонний'
-elsif a == b or b == c or a == c 
+elsif a == b || b == c || a == c 
     puts 'Прямоугольник равнобедренный'
 elsif max_side * max_side == side[0] * side[0] + side[1] * side[1]
     puts 'Треугольник является прямоугольным '
