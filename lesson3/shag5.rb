@@ -1,20 +1,5 @@
-shag = []
-shag << 10
-shag << 15
-shag << 20
-shag << 25
-shag << 30
-shag << 35
-shag << 40
-shag << 45
-shag << 50
-shag << 55
-shag << 60
-shag << 65
-shag << 70
-shag << 75
-shag << 80
-shag << 85
-shag << 90
-shag << 95
-shag << 100
+# Заполнить массив числами от 10 до 10000 с шагом 5
+
+shag = (10..10_000).select { |x| (x % 5).zero? }
+
+print shag
