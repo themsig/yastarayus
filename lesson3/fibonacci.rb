@@ -1,13 +1,13 @@
-fib = []
-fib << 0
-fib << 1
-fib << 1
-fib << 2
-fib << 3
-fib << 5
-fib << 8
-fib << 13
-fib << 21
-fib << 34
-fib << 55
-fib << 89 
+def fibonacci(number)
+  fibonacci_numbers = []
+  fib1 = 0
+  fib2 = 1
+
+  number.times do
+    fibonacci_numbers << fib1
+    fib1, fib2 = fib2, fib1 + fib2
+  end
+  fibonacci_numbers
+end
+
+fibonacci(10_000)
